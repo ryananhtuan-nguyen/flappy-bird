@@ -114,7 +114,11 @@ function play() {
   function create_pipe() {
     if (game_state != 'Play') return;
 
-    if (score_val.innerHTML > 5) pipe_gap = 20;
+    if (score_val.innerHTML > 5) pipe_gap = 30;
+
+    if (score_val.innerHTML > 10) pipe_gap = 25;
+
+    if (score_val.innerHTML > 25) pipe_gap = 20;
 
     if (pipe_seperation > 115) {
       pipe_seperation = 0;
